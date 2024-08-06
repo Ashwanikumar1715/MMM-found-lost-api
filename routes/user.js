@@ -15,7 +15,7 @@ const {
 const { verify } = require('../middleware/authMiddleware');
 
 router.post('/login', authUser);
-router.post('/register', registerUser);
+router.post('/register', registerUser)
 
 router.get('/profile', verify, getUserProfile);
 router.put('/profile', verify, updateUserProfile);
